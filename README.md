@@ -46,6 +46,15 @@ Gherkin predates Cucumber...
 Communication tends to be the largest factor in the root cause of "bugs".
 * Code tends to be over / under built
 * Written requirements tend to not be expressive enough true intention
+* Three Amigos == Good Start
+
+SDLC Concepts
+* Traditional
+ * [Code]-[Days]-[Test]
+* Agile
+ * [Code][Test]
+* ATDD
+ * [Test][Code]
 
 Do we build a simple feature or write anticpiated frameworks?
 * Simple with tons of tests => more reliable and robust
@@ -58,4 +67,3 @@ Can use IRB and load and run webdriver
 * No Boundries => THIS is our boundry
 * No traditional QA Staff
 * Beginning story acceptance criteria
-*
