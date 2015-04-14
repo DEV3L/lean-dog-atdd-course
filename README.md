@@ -25,7 +25,9 @@ http://www.leandog.com/atdd/
 * 03_adopt_multiple_puppies
   * a bit more navigation and interaction
 * 04_methods
-  * 
+  * refactor existing code base to use methods
+* 05_shared_methods
+  * refactor methods code base to use a module
 
 
 # Terms
