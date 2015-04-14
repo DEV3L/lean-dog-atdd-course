@@ -55,6 +55,7 @@ SDLC Concepts
  * [Code][Test]
 * ATDD
  * [Test][Code]
+ * [Write Test][Code][Test]
 
 Do we build a simple feature or write anticpiated frameworks?
 * Simple with tons of tests => more reliable and robust
