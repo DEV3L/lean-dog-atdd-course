@@ -6,9 +6,6 @@ Course introduces the concepts of Acceptance Test Driven Development, also calle
 The course was intended for programmers and non-programmers alike.
 Previous Ruby/Watir experience was not a prerequisite.
 
-# Terms
-D.R.Y
-
 # Lean Dog
 http://www.leandog.com/
 
@@ -31,3 +28,10 @@ http://www.leandog.com/atdd/
   * 
 
 
+# Terms
+<dl>
+  <dt>DRY</dt>
+  <dd>Don't Repeat Yourself</dd>
+  <dt>DAMP</dt>
+  <dd>Descriptive And Meaningful Phrases</dd>
+</dl>
