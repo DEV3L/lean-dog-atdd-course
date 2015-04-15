@@ -3,15 +3,12 @@ Feature: Adopt a puppy
   I want to adopt a puppy
   So that I can give a puppy a better life
 
-  Scenario: User views a puppies details
+  Background:
     Given I am looking for a puppy
     When I view the details puppy 1
     Then I should see details for "Brook"
 
   Scenario: Adopt the first puppy
-    Given I am looking for a puppy
-    When I view the details puppy 1
-    Then I should see details for "Brook"
     And I adopt the puppy
     And I complete the adoption
     And I enter "Pat Kelly" as the name
@@ -22,9 +19,6 @@ Feature: Adopt a puppy
     Then I should see the message "Thank you for adopting a puppy!"
 
   Scenario: Adopt the first puppy using table arguments
-    Given I am looking for a puppy
-    When I view the details puppy 1
-    Then I should see details for "Brook"
     And I adopt the puppy
     And I complete the adoption
     And I fill out the details form
@@ -34,9 +28,6 @@ Feature: Adopt a puppy
     Then I should see the message "Thank you for adopting a puppy!"
 
   Scenario: Adopt the two puppies
-    Given I am looking for a puppy
-    When I view the details puppy 1
-    Then I should see details for "Brook"
     And I adopt the puppy
     And I want to adopt another puppy
     When I view the details puppy 2

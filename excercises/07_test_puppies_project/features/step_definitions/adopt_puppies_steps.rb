@@ -42,7 +42,7 @@ And(/^I complete the order$/) do
 end
 
 Then(/^I should see the message "([^"]*)"$/) do |success_message|
-  fail "Adoption not completed" unless @browser.text.include? success_message
+  expect(@browser.text).to include success_message
 end
 
 
@@ -52,4 +52,8 @@ And(/^I fill out the details form$/) do |details_data_table|
   @browser.textarea(:id => 'order_address').set details_data["address"]
   @browser.text_field(:id => 'order_email').set details_data["email"]
   @browser.select_list(:id => 'order_pay_type').select details_data["payment"]
+end
+
+And(/^I want to adopt another puppy$/) do
+  @browser.button(:value => 'Adopt Another Puppy').click
 end
