@@ -10,7 +10,7 @@ http://www.leandog.com/atdd/
 # Presenters
 * Patrick Kelly
 * Doug Morgan
-* 
+* Randy Eppinger
 
 Course introduces the concepts of Acceptance Test Driven Development, also called Specification By Example. It teaches how ATDD changes the workflow of the entire development process. Through a series of targeted workshops, this course introduces Cucumber and Ruby scripting as well as the techniques necessary to write tests that are robust and easy to maintain. This course also includes workshops on test-data management, creating and validating XML files in the created test, and modifying scripts to handle the special needs of Ajax and JavaScript heavy applications.
 
