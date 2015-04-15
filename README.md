@@ -38,6 +38,11 @@ Gherkin predates Cucumber...
   * refactor existing code base to use methods
 * 05_shared_methods
   * refactor methods code base to use a module
+* 06_this_is_cucumber
+  * a basic nonfunctional cucumber example
+* 07_test_puppies_project
+  * README.md!
+  * Cucumber version of 03-05
 
 # Terms
 <dl>
@@ -53,7 +58,15 @@ Communication tends to be the largest factor in the root cause of "bugs".
 * Written requirements tend to not be expressive enough true intention
 * Three Amigos == Good Start
 
-SDLC Concepts
+### Conventions of cucumber...
+	features directory contains features
+		file extension .feature
+	step_definitions contains step definitions
+		files traditionally named with *_steps.rb
+	support directory loaded by cucumber
+		env.rb first one loaded
+
+### SDLC Concepts
 * Traditional
  * [Code]-[Days]-[Test]
 * Agile
