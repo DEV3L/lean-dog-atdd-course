@@ -1,5 +1,5 @@
-require 'watir-webdriver'
-load 'adoption_helper.rb'
+require_relative 'adoption_helper'
+include AdoptionHelper
 
 goto_puppies_page
 adopt_puppy 1

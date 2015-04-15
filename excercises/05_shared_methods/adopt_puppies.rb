@@ -1,4 +1,3 @@
-require 'watir-webdriver'
 require_relative 'adoption_helper'
 include AdoptionHelper
 

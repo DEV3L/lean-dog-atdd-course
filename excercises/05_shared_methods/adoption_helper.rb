@@ -1,4 +1,6 @@
 module AdoptionHelper
+  require 'watir-webdriver'
+
   def goto_puppies_page
     @browser = Watir::Browser.new :firefox
     @browser.goto 'puppies.herokuapp.com'
