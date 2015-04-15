@@ -22,6 +22,11 @@ WATIR - Web Application Test In Ruby
 
 Gherkin predates Cucumber...
 
+# Environment Setup / Requirements
+* Ruby installed
+* gem install watir-webdriver
+* gem install testgen
+
 # Course Overview
 * 01_getting_started
   * basic WATIR
