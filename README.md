@@ -39,6 +39,7 @@ Gherkin predates Cucumber...
 * 05_shared_methods
   * refactor methods code base to use a module
 * 06_this_is_cucumber
+  * README.md!
   * a basic nonfunctional cucumber example
 * 07_test_puppies_project
   * README.md!
