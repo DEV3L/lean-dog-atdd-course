@@ -20,3 +20,15 @@ Feature: Adopt a puppy
     And I select "Check" as the payment type
     And I complete the order
     Then I should see the message "Thank you for adopting a puppy!"
+
+  Scenario: Adopt the first puppy using table arguments
+    Given I am looking for a puppy
+    When I view the details puppy 1
+    Then I should see details for "Brook"
+    And I adopt the puppy
+    And I complete the adoption
+    And I fill out the details form
+      | name      | address      | email               | payment |
+      | Pat Kelly | 123 Main St. | jus.beall@gmail.com | Check   |
+    And I complete the order
+    Then I should see the message "Thank you for adopting a puppy!"

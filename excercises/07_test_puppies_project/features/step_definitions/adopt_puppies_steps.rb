@@ -44,3 +44,12 @@ end
 Then(/^I should see the message "([^"]*)"$/) do |success_message|
   fail "Adoption not completed" unless @browser.text.include? success_message
 end
+
+
+And(/^I fill out the details form$/) do |details_data_table|
+  details_data = details_data_table.hashes.first
+  @browser.text_field(:id => 'order_name').set details_data["name"]
+  @browser.textarea(:id => 'order_address').set details_data["address"]
+  @browser.text_field(:id => 'order_email').set details_data["email"]
+  @browser.select_list(:id => 'order_pay_type').select details_data["payment"]
+end
