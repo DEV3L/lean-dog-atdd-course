@@ -7,7 +7,8 @@ Feature: Adopt A Puppy
     Given I am looking for a puppy to adopt
 
   Scenario: Adopt One Puppy
-    When I adopt puppy 1
+    When I view the details of puppy 1
+    And I adopt the puppy
     And I complete the adoption
     And I checkout with:
       | name      | address      | email        | payment type |
@@ -15,9 +16,11 @@ Feature: Adopt A Puppy
     Then I should see the message "Thank you for adopting a puppy!"
 
   Scenario: Adopt Two Puppies
-    When I adopt puppy 1
+    When I view the details of puppy 1
+    And I adopt the puppy
     And I adopt another puppy
-    And I adopt puppy 2
+    When I view the details of puppy 2
+    And I adopt the puppy
     And I complete the adoption
     And I checkout with:
       | name      | address      | email        | payment type |
