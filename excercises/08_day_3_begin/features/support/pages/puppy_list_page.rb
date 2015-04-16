@@ -1,9 +1,7 @@
 class PuppyListPage
   include PageObject
 
-  def goto_puppy_list
-    navigate_to "http://puppies.herokuapp.com"
-  end
+  page_url "http://puppies.herokuapp.com"
 
   def view_puppy_details(puppy_number)
     index = puppy_number - 1

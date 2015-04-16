@@ -1,4 +1,4 @@
-class OrderDeatilsPage
+class OrderDetailsPage
   include PageObject
 
   text_field(:name, :id => 'order_name')
