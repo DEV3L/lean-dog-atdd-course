@@ -7,15 +7,18 @@ Feature: Shopping Cart Validation
     Given I am looking for a puppy to adopt
 
   Scenario: Validate cart with one puppy
-    When I adopt puppy 1
+    When I view the details of puppy 1
+    And I adopt the puppy
     Then I should see "Brook" as the name for line item 1
     And I should see "$34.95" as the subtotal for line item 1
     And I should see "$34.95" as the total for the cart
 
   Scenario: Validate cart with two puppies
-    When I adopt puppy 1
+    When I view the details of puppy 1
+    And I adopt the puppy
     And I adopt another puppy
-    And I adopt puppy 2
+    And I view the details of puppy 2
+    And I adopt the puppy
     Then I should see "Brook" as the name for line item 1
     And I should see "$34.95" as the subtotal for line item 1
     And I should see "Hanna" as the name for line item 2
